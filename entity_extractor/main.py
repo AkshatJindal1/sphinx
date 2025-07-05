@@ -10,10 +10,11 @@ def handle_entity_extract():
     if 'cv_file' not in request.files:
         return jsonify({"error": "No file part"}), 400
     
+    jd_text = request.form.get('jd_text')
     file = request.files['cv_file']
     
     try:
-        prompt = extract_entity(file, "This is the description")
+        prompt = extract_entity(file, jd_text)
         return jsonify({
             "status": "success",
             "prompt_length": len(prompt),
