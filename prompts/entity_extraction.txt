@@ -74,10 +74,10 @@ OUTPUT:
 --- ACTUAL TASK ---
 INPUT:
 --- JOB DESCRIPTION TEXT ---
-{jd_text_goes_here}
+{{jd_text}}
 --- END JOB DESCRIPTION ---
 --- CV TEXT ---
-{cv_text_goes_here}
+{{cv_text}}
 --- END CV TEXT ---
 
 OUTPUT:
